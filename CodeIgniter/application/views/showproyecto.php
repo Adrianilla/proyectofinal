@@ -77,6 +77,24 @@
                 <h1>No entries</h1>
         <?php endif; 
 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    ?>
 
 </body>
