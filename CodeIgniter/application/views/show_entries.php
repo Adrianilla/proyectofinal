@@ -75,27 +75,7 @@
                 <?php endforeach; ?>
         <?php else : ?>
                 <h1>No entries</h1>
-        <?php endif; 
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ?>
+        <?php endif; ?>
 
 </body>
 </html>
