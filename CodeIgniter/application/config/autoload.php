@@ -1,6 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-$autoload['libraries'] = array('database');
+$autoload['libraries'] = array('database','session');
 $autoload['helper'] = array('form', 'url', 'blog');
+
 
 /*
 | -------------------------------------------------------------------
