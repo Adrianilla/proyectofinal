@@ -24,6 +24,25 @@ class Blog extends CI_Controller {
                 $this->blog_model->insert('entries', $entry);
                 redirect(base_url());
         }
+        public function entry(){
+        login_site();
+        $this->load->view('new_entry');
+         } 
+         public function insert_entry(){
+        login_site();
+        $entry = array(
+                'permalink'  => permalink($this->input->post('title')),
+                'author' => $this->session->userdata('username'),
+                'title' => $this->input->post('title'),
+                'content' => $this->input->post('content'),
+                'date' => date('Y-m-d H:i:s'),
+                'tags' => $this->input->post('tags')
+                );             
+        $this->blog_model->insert('entries', $entry);
+        redirect(base_url());
+            }
+
+
 }
 
 class User extends CI_Controller {

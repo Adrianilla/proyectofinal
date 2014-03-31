@@ -7,4 +7,11 @@ class Blog_model extends CI_Model {
         public function insert($table, $data){
                 return $this->db->insert($table, $data);
         }
+       public function validate_credentials($username, $password){
+        $this->db->where('username', $username);
+        $this->db->where('password', $password);
+        return $this->db->get('users')->row();
+        }
+
+
 }
