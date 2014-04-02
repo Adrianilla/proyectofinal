@@ -42,6 +42,14 @@ class Blog extends CI_Controller {
         redirect(base_url());
             }
 
+          public function view(){
+        $entry_id = $this->uri->segment(3);
+        $data['entry'] = $this->blog_model->getEntry($entry_id);
+        $data['comments'] = $this->blog_model->getComments($entry_id);
+        $this->load->view('view_entry', $data);
+}
+
+
 
 }
 
