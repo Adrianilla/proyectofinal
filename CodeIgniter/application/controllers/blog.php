@@ -48,7 +48,17 @@ class Blog extends CI_Controller {
         $data['comments'] = $this->blog_model->getComments($entry_id);
         $this->load->view('view_entry', $data);
 }
-
+     public function comment(){
+        $id_blog = $this->input->post('id_blog');
+        $comment = array(
+                'id_blog' => $id_blog,
+                'author' => $this->session->userdata('username'),
+                'comment' => $this->input->post('comment'),
+                'date' => date('Y-m-d H:i:s')
+                );
+        $this->blog_model->insert('comments', $comment);
+        redirect(base_url().'blog/view/'.$id_blog);
+}
 
 
 }
