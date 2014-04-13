@@ -66,7 +66,8 @@
 	</style>
 </head>
 <body>
-	 <?php include('menu.php');?>
+	error
+		 <?php include('menu.php');?>
         <?php if (!empty($entries)) : ?>
                 <?php foreach($entries as $entry) : ?>
                         <h2><?=$entry->title?></h2>

@@ -72,7 +72,7 @@ class User extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('show_entries');
 	}
 	public function show($id,$name,$last_name)
 	{

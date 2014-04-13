@@ -1,5 +1,5 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-$config['base_url'] = 'http://localhost/codeigniter_blog/';
+//$config['base_url'] = 'http://localhost/codeigniter_blog/';
 $config['encryption_key'] = 'blogsite';
 
 /*
@@ -16,7 +16,7 @@ $config['encryption_key'] = 'blogsite';
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/proyectofinal/codeIgniter/';
 
 /*
 |--------------------------------------------------------------------------
