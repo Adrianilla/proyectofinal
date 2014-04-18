@@ -19,6 +19,14 @@ if ( ! function_exists('tags')){
                         echo '<u>'.$t.'</u> ';                 
         }
 }
+if ( ! function_exists('convertDateTimetoTimeAgo')){
+        function convertDateTimetoTimeAgo($datetime){          
+                $date = str_replace("-", "", substr($datetime, 0, 10));
+                $time = str_replace(":", "", substr($datetime, 11, 5));
+                //Fecha estilo TimeAgo
+                return "<script>document.write(moment('$date$time', 'YYYYMMDDHHmm').fromNow());</script>";             
+        }
+}
 
 /**
  * CodeIgniter
