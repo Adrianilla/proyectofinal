@@ -20,6 +20,8 @@
                         <?=form_submit('submit','Send')?>
                         <?=form_close()?>
         <?php endif; ?>
+
+
         <?php
                 if(!empty($comments)){
                         echo '<h3>Comments</h3>';
@@ -31,6 +33,7 @@
                 else
                         echo '<h3>No Comments!</h3>';
         ?>
-       
+
+        
 </body>
 </html>

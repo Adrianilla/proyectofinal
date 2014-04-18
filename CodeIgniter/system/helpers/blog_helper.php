@@ -12,7 +12,13 @@
         }
      }
 }
-
+if ( ! function_exists('tags')){
+        function tags($tags){          
+                $tags = explode(',', $tags);
+                foreach ($tags as $t)
+                        echo '<u>'.$t.'</u> ';                 
+        }
+}
 
 /**
  * CodeIgniter
