@@ -66,7 +66,7 @@
 	</style>
 </head>
 <body>
-	error
+	no lo encuentro el maldito error.............
 		 <?php include('menu.php');?>
         <?php if (!empty($entries)) : ?>
                 <?php foreach($entries as $entry) : ?>
